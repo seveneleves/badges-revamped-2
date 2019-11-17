@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <title>My Badges</title>
+  </head>
+
+  <body>
+
+    <div id="main-content">
+
+      <h1>Mes badges</h1>
+
+      <div class="badge-container">
+
+        <div title="Vie du cabinet" id="cse" onclick="modal(this)" class="badge">
+          <img class="grade-small" src="img/cse.png" alt="Pour avoir effectué une activité proposée par le CSE">
+          <span class="tooltip-text">Merci le CSE !</span>
+        </div>
+
+        <div title="Business" id="rao" onclick="modal(this)" class="badge">
+          <img class="grade-small" src="img/rao.png" alt="Pour avoir répondu à un appel d'offres ENEDIS">
+          <span class="tooltip-text">CCTP mon amour</span>
+        </div>
+
+        <div title="Missions" id="copil" onclick="modal(this)" class="badge">
+          <img class="grade-small" src="img/copil.png" alt="Pour avoir animé un COPIL métier">
+          <span class="tooltip-text">Passion COPIL</span>
+        </div>
+
+        <div title="Business" id="new" onclick="modal(this)" class="badge">
+          <img class="grade-small" src="img/new.png" alt="Pour avoir contribué à l'ouverture d'un compte client">
+          <span class="tooltip-text">Ka-ching !</span>
+        </div>
+
+        <div title="Vie du cabinet" id="bike" onclick="modal(this)" class="badge">
+          <img class="grade-small" src="img/bike.png" alt="Pour son implication à réduire son empreinte carbone">
+          <span class="tooltip-text">Objectif Tour de France</span>
+        </div>
+
+        <div title="Vie du cabinet" id="linkedin" onclick="modal(this)" class="badge">
+          <img class="grade-small" src="img/linkedin.png" alt="Pour avoir partagé une publication Linkedin du cabinet">
+          <span class="tooltip-text">Linkedin Wizard</span>
+        </div>
+
+        <div title="Vie du cabinet" id="arrondi" onclick="modal(this)" class="badge">
+          <img class="grade-small" src="img/arrondi.png" alt="Pour effectuer l'arrondi sur salaire">
+          <span class="tooltip-text">Grand cœur</span>
+        </div>
+
+        <div title="Collaborateur" id="up" onclick="modal(this)" class="badge">
+          <img class="grade-small" src="img/up.png" alt="Pour son évolution au poste de Manager associé">
+          <span class="tooltip-text">1 UP</span>
+        </div>
+
+        <div title="Vie du cabinet" id="co-opt" onclick="modal(this)" class="badge">
+          <img class="grade-small" src="img/co-opt.png" alt="Pour avoir coopté un collaborateur">
+          <span class="tooltip-text">Toi, mon ami</span>
+        </div>
+
+        <div title="Missions" id="success" onclick="modal(this)" class="badge">
+          <img class="grade-small" src="img/success.png" alt="Pour avoir assuré en mission">
+          <span class="tooltip-text">Wahou !</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="modalBox" class="modal-container">
+
+      <div class="modal-background"></div>
+
+      <div class="modal-content">
+
+        <div class="modal-certification-info">
+          <div class="title">
+            <h1 id="certificate-name"></h1>
+            <img id="checkmark" src="">
+          </div>
+
+          <h2 id="certificate-category"></h2>
+          <p class="text-big" id="certificate-description"></p>
+          <p>
+            <span class="bold">Année d'obtention : </span><span id="certificate-year"></<span>
+          </p>
+          <p>
+            <span class="bold">Manager : </span><span id="certificate-manager"></<span>
+          </p>
+          <p>
+            <span class="bold">UO : </span><span id="certificate-uo"></<span>
+          </p>
+          <p>
+            <span class="bold">Compétence 1 : </span><span id="certificate-skill-type-0"></<span>
+          </p>
+          <p class="italic" id="certificate-skill-comment-0"></p>
+          <p>
+            <span class="bold">Compétence 2 : </span><span id="certificate-skill-type-1"></<span>
+          </p>
+          <p class="italic" id="certificate-skill-comment-1"></p>
+          <p>
+            <span class="bold">Compétence 3 : </span><span id="certificate-skill-type-2"></<span>
+          </p>
+          <p class="italic" id="certificate-skill-comment-2"></p>
+
+          <p>Consultez <a id="certificate-link" href="" target="_blank">ici</a> le certificat blockchain</p>
+
+        </div>
+
+        <img id="badge-icon" class="grade-full" src="" alt="badge">
+
+      </div>
+
+      <span id="close">&times;</span>
+
+    </div>
+
+    <a href="index.html">Retour à la page d'accueil</a>
+
+    <script type="text/javascript" src="js/badges.js">
+
+    </script>
+
+  </body>
+
+</html>
